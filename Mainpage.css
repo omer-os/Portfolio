@@ -1,16 +1,28 @@
+@font-face{
+    font-family:"roboto";
+    font-weight: 100;
+    src: url("Fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
+}
+
 *{
-    box-sizing: border-box;
-    /*border-color: #ffffff;*/
     color: #ffffff;
+    font-family: "roboto" ;
 }
 
 body{
     background-color: #221A0F;
 }
 
-.TitleText{
+h1{
     font-size: 50;
     background-color: #ffa500;
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+.row::after {
+    clear: both;
+    display: table;
 }
 
 [class*="col-"] {
@@ -18,8 +30,16 @@ body{
     padding: 15px;
 }
 
-
-/* columns*/
-.col-1 {width: 33.3%;}
-.col-2 {width: 66.6%;}
-.col-3 {width: 100%}
+/* columns:
+col-1 = leftmost gutter
+col-2 = first column
+col-4 = second column
+col-6 = last column
+col-3, 5, 7 = gutters*/
+.col-1{width: 6.25%;}
+.col-2{width: 31.25%;}
+.col-3{width: 37.5%;}
+.col-4{width: 62.5%;}
+.col-5{width: 68.75%;}
+.col-6{width: 93.75;}
+.col-7{width: 100%}
