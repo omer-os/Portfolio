@@ -6,6 +6,7 @@
     src: url("Fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
 }
 
+
 *{
     color: #FCC42F;
     font-family: "roboto";
@@ -40,11 +41,20 @@ h1{
 
 h2{
     font-size: 1vw;
-    padding: 5;
+    padding: 1.3vh;
     grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 14;
     grid-row-end: 19;
+}
+
+h3{
+    font-size: 1vw;
+    padding: 1.3vh;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 32;
+    grid-row-end: 37;
 }
 
 .titleScreenArea{ /*the large empty space around the title*/
@@ -54,22 +64,52 @@ h2{
     grid-row-end: 8;
 }
 
-.mainImage{ /*image between first and second paragraph, only image on page but using class just incase i need another one later*/
-    grid-column-start: 5;
-    grid-column-end: 10;
-    grid-row-start: 20;
-    grid-row-end: 27;
-    object-fit: fill;
-    display: block;
-}
-
 .orangeBack{ /*for anything that isnt a <h> tag*/
     background-color: #ffa500;
     background: radial-gradient(#E39823 40%, #8D5001);
     border-radius: 5px;
+    padding: 5px;
+}
+
+.orangeBorder{
+    background: radial-gradient(#E39823 40%, #8D5001);
+    border-radius: 5px;
+    padding: 1rem;
 }
 
 
+.textBox{
+    text-align: center;
+    padding: 2.5vh;
+}
+
+#profileImage{ 
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 20;
+    grid-row-end: 27;
+}
+
+#galleryLinkText{
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 38;
+    grid-row-end: 39;
+}
+
+#programGalleryButton{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 40;
+    grid-row-end: 41;
+}
+
+#artGalleryButton{
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 40;
+    grid-row-end: 41;
+}
 
 
 
