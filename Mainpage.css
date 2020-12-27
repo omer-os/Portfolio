@@ -15,7 +15,6 @@
 body{
     margin: 20;
     background-color: #221A0F;
-    max-height: 100rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(20, 1fr);
@@ -27,11 +26,10 @@ h1, h2, h3{
     background-color: #ffa500;
     background: radial-gradient(#E39823 40%, #8D5001);
     border-radius: 5px;
-    /*url("C:/Users/Nye/Documents/GitHub/Portfolio-Site/Images/NoiseFilter.png");*/
 }
 
 h1{
-    font-size: 500%;
+    font-size: 5vw;
     padding-left: 6; 
     grid-column-start: 1;
     grid-column-end: 5;
@@ -40,9 +38,8 @@ h1{
 }
 
 h2{
+    font-size: 1vw;
     padding: 5;
-    letter-spacing: 0.05rem;
-    line-height: 1.2rem;
     grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 8;
@@ -60,9 +57,11 @@ h2{
     grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 12;
-    grid-row-end: 14;
+    grid-row-end: 13;
+    object-fit: contain;
+    display: block;
     width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 .orangeBack{ /*for anything that isnt a <h> tag*/
