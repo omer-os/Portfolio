@@ -16,11 +16,7 @@
 body{
     margin: 20;
     background-color: #221A0F;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(42, 1fr);
-    gap: 1vh;
-    height: 400vh; 
+    
 }
 
 
@@ -53,8 +49,8 @@ h3{
     padding: 1.3vh;
     grid-column-start: 2;
     grid-column-end: 12;
-    grid-row-start: 32;
-    grid-row-end: 37;
+    grid-row-start: 2;
+    grid-row-end: 7;
 }
 
 .titleScreenArea{ /*the large empty space around the title*/
@@ -88,33 +84,47 @@ h3{
     font-size: 1vw;
 }
 
+#bodyAboveImage{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    gap: 1vh;
+    height: 200vh; 
+}
+
+#bodyBelowImage{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 1vh;
+    height: 130vh; 
+}
+
 #profileImage{ 
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 20;
-    grid-row-end: 30;
+    width: 100%;
+    height: auto;
+    text-align: center;
 }
 
 #galleryLinkText{
     grid-column-start: 6;
     grid-column-end: 8;
-    grid-row-start: 38;
-    grid-row-end: 39;
-    font-size: ;
+    grid-row-start: 8;
+    grid-row-end: 9;
 }
 
 #programGalleryButton{
     grid-column-start: 4;
     grid-column-end: 6;
-    grid-row-start: 40;
-    grid-row-end: 41;
+    grid-row-start: 10;
+    grid-row-end: 11;
 }
 
 #artGalleryButton{
     grid-column-start: 8;
     grid-column-end: 10;
-    grid-row-start: 40;
-    grid-row-end: 41;
+    grid-row-start: 10;
+    grid-row-end: 11;
 }
 
 
