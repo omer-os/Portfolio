@@ -15,8 +15,8 @@
 
 body{
     margin: 20;
-    /*background-color: #221A0F;*/
-    background-image: url("Images/BackGroundTest.png");
+    background-color: #221A0F;
+    background-image: url("Images/BackGroundTestNoGlow.png");
     background-position: bottom;
     
 }
