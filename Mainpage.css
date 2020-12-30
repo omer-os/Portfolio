@@ -15,7 +15,9 @@
 
 body{
     margin: 20;
-    background-color: #221A0F;
+    /*background-color: #221A0F;*/
+    background-image: url("Images/BackGroundTest.png");
+    background-position: bottom;
     
 }
 
@@ -23,7 +25,7 @@ body{
 h1, h2, h3{
     background-color: #ffa500;
     background: radial-gradient(#E39823 40%, #8D5001);
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 h1{
@@ -68,10 +70,7 @@ h3{
 }
 
 .orangeBorder{
-    /*
-    background: radial-gradient(#E39823 40%, #8D5001);
-    border-radius: 5px;
-    */
+
     border: 5px outset #E39823;
     border-radius: 5px;
 }
@@ -82,6 +81,12 @@ h3{
     text-align: center;
     padding: 2.5vh;
     font-size: 1vw;
+}
+
+#filter{
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #bodyAboveImage{
@@ -95,9 +100,9 @@ h3{
 #bodyBelowImage{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     gap: 1vh;
-    height: 130vh; 
+    height: 170vh; 
 }
 
 #profileImage{ 
