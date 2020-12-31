@@ -68,6 +68,11 @@ h2, h3{
     font-size: 1.3vw;
 }
 
+#galleryHeader{
+    margin-left: 35vw; 
+    margin-right: 35vw;
+}
+
 
 @media (orientation:portrait){
 
@@ -96,7 +101,14 @@ h2, h3{
 
         border-radius: 0;
 
-        font-size: 2.3vw;
+        font-size: 1vw;
+    }
+
+    #galleryHeader{
+        margin-left: 0; 
+        margin-right: 0;
+        border-radius: 0;
+        font-size: 4vw;
     }
 }
 
