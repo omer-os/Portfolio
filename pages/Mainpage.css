@@ -3,14 +3,14 @@
 @font-face{
     font-family:"roboto";
     font-weight: 100;
-    src: url("../Fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
+    src: url("../fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
 }
 
 body{
     color: #ffd256;
     font-family: "roboto";
     background-color: #221A0F;
-    background-image: url("../Images/BackGroundTestNoGlow.png");
+    background-image: url("../images/BackGroundTestNoGlow.png");
     background-position: bottom;
     
 }
