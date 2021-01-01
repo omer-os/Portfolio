@@ -48,6 +48,12 @@ h2, h3{
 
 }
 
+button{
+    background-color: transparent;
+    border: none;
+    color: #ffd256;
+}
+
 
 
 .orangeBack{ /*for anything that isnt a <h> tag*/
