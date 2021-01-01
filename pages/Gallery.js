@@ -1,13 +1,7 @@
-class slide{
-    constructor(title, caption, image){
-        this.title = title;
-        this.caption = caption;
-        this.image = image;
-    }
-}
+import {slide} from "GalleryIndex.js";
+import {slides} from "GalleryIndex.js";
 
 var currentSlide = 0;
-var slides = [1, 2, 3, 4, 5, 6, 7] //generic info, placeholder
 
 
 function nextSlide(){
@@ -27,5 +21,5 @@ function updateSlide(){
         currentSlide = slides.length;
     }
 
-    console.log(currentSlide);
+    console.log(slides[currentSlide]);
 }
