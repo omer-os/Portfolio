@@ -252,13 +252,13 @@ h2, h3{
     
     .GalleryLeftArrow{
         grid-column: 1;
-        grid-row: 11;
+        grid-row: 12;
         font-size: 7vw;
     }
     
     .GalleryRightArrow{
         grid-column: 12;
-        grid-row: 11;
+        grid-row: 12;
         font-size: 7vw;
     }
 }
