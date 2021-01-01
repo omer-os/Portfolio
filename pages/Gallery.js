@@ -1,4 +1,4 @@
-import {slidem, slides} from "/GalleryIndex.js";
+import {slidem, slides} from "/galleryIndex.js";
 
 var currentSlide = 0;
 
