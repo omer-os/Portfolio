@@ -7,7 +7,7 @@ class slide{
 }
 
 var currentSlide = 0;
-var slides = []
+var slides = [1, 2, 3, 4, 5, 6, 7] //generic info, placeholder
 
 
 function nextSlide(){
