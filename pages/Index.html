@@ -2,10 +2,11 @@
 
 <header>
     <link rel = "stylesheet" href = "Mainpage.css">
-    <script src = "\gallery.js" type = "module"></script>
+    <link rel = "icon" href = "..\images\Favicon.ico">
 
     <meta charset="UTF-8">
 
+    <script src = "gallery.js" type = "module"></script>
     <title>Nye Evans Portfolio</title>
 </header>
 
@@ -38,11 +39,11 @@
     </div>
 
     <div id = "programGallery">
-        <img src = "gallery\Cat_tower_defense\projectHeaderImage.png" class = "GalleryImage">
-        <p class = "GalleryTitle orangeBack">Image Title</p>
-        <p class = "GalleryCaption orangeBack">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <button class = "GalleryLeftArrow" onClick = lastSlide()>◄</button>
-        <button class = "GalleryRightArrow" onClick = nextSlide()>►</button>
+        <a href = "\gallery\Cat_tower_defense\cat-tower-defense.html"  class = "GalleryImage" id = "programGalleryLink"><img src = "gallery\Cat_tower_defense\projectHeaderImage.png"  class = "GalleryImage" id = "programGalleryImage"></a>
+        <p class = "GalleryTitle orangeBack" id = "programGalleryTitle">Image Title</p>
+        <p class = "GalleryCaption orangeBack" id = "programGalleryCaption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class = "GalleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
+        <button class = "GalleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
     </div>
 
     <div id = "personalGallery" style = "margin-bottom: 40vh;">

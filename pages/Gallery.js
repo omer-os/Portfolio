@@ -1,24 +1,28 @@
-import {slidem, slides} from "/gallery-index.js";
+import {slide, slides} from "../pages/gallery-index.js";
 
 var currentSlide = 0;
 
 
-function nextSlide(){
+window.nextSlide = function nextSlide(){
     currentSlide++;
     updateSlide();
 }
 
-function lastSlide(){
+window.lastSlide = function lastSlide(){
     currentSlide--;
     updateSlide();
 }
 
 function updateSlide(){
-    if (currentSlide > slides.length){
+    if (currentSlide > slides.length-1){
         currentSlide = 0;
     } else if (currentSlide < 0){
-        currentSlide = slides.length;
+        currentSlide = slides.length-1;
     }
-
-    console.log(slides[currentSlide]);
+    document.getElementById("programGalleryTitle").innerHTML = slides[currentSlide].title;
+    document.getElementById("programGalleryCaption").innerHTML = slides[currentSlide].caption;
+    document.getElementById("programGalleryImage").src = slides[currentSlide].image;
+    document.getElementById("programGalleryLink").href = slides[currentSlide].link;
 }
+
+console.log("script loaded");
