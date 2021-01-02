@@ -26,3 +26,4 @@ function updateSlide(){
 }
 
 console.log("script loaded");
+updateSlide();
