@@ -19,10 +19,14 @@ function updateSlide(){
     } else if (currentSlide < 0){
         currentSlide = slides.length-1;
     }
+
     document.querySelector(".galleryTitle").innerHTML = slides[currentSlide].title;
     document.querySelector(".galleryCaption").innerHTML = slides[currentSlide].caption;
-    document.querySelector(".galleryImage").src = slides[currentSlide].image;
     document.querySelector(".galleryLink").href = slides[currentSlide].link;
+    document.querySelector(".galleryImage").src = slides[currentSlide].image;
+
+    console.log(document.querySelector(".galleryImage").src)
+    console.log(slides[currentSlide].image)
 }
 
 updateSlide();

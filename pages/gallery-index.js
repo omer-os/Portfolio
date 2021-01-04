@@ -6,7 +6,8 @@ export class slide{
         this.link = link;
     }
 }
-export var slides = [new slide("john", "he is john", "gallery/Cat_tower_defense/projectHeaderImage.png"),
-    new slide("jack", "he is jack", "gallery/Room_builder/projectHeaderImage.png"),
-    new slide("james", "he is james", "gallery/EPQ_project/projectHeaderImage.png")
+
+export var slides = [new slide("john", "he is john", "pages/gallery/Cat_tower_defense/projectHeaderImage.png", "https://www.bbc.co.uk/"),
+    new slide("jack", "he is jack", "pages/gallery/Room_builder/projectHeaderImage.png", "https://twitter.com/"),
+    new slide("james", "he is james", "pages/gallery/EPQ_project/projectHeaderImage.png", "https://www.google.com/")
 ];
