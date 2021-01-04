@@ -219,6 +219,19 @@ h4{
         font-size: 2.3vw;
     }
 
+    .profileImage{
+        margin: 0;
+        width: 100%; 
+
+        border: none;
+        border-radius: 0;
+        border-top:  5px solid #ffd256;
+        border-bottom:  5px solid #ffd256;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     #galleryHeader{
         margin-left: 0; 
         margin-right: 0;
@@ -233,10 +246,6 @@ h4{
         
         margin-left: 0;
         margin-right: 0;
-    }
-
-    .galleryDescriptor{
-        grid-column: 1/13;
     }
 
     .galleryImage{ /*all images should be 700x700*/
@@ -276,19 +285,21 @@ h4{
         font-size: 3.5vh;
     
         border-radius: 0;
+        border: 5px solid #ffd256;
         border-left: 0;
         border-right: 0;
-        border-bottom: 2px solid #ffd256;;
     }
 
     .galleryCaption{
         grid-column: 1/13;
         grid-row: 8/13;
     
-        border-radius: 0;
         font-size: 4vw; 
+
+        border: 5px solid #ffd256;
         border-left: 0;
         border-right: 0;
+        border-radius: 0;
     }
     
     .galleryLeftArrow{
