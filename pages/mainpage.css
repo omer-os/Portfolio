@@ -242,12 +242,19 @@ h4{
     .galleryImage{ /*all images should be 700x700*/
         grid-column: 1/13;
         grid-row: 3/8;
+
         border-bottom-left-radius: 0;
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        object-position: center;
     
         object-fit: cover;
     
         width: 100%;
         height: 100%;
+
     }
 
     .galleryLink{
@@ -260,13 +267,6 @@ h4{
         height: 100%;
     }
 
-    img.galleryImage{
-        border: 0;
-        padding-left: 0;
-        padding-right: 0;
-
-    }
-    
     .galleryTitle{
         grid-column: 1/13;
         grid-row: 2;
