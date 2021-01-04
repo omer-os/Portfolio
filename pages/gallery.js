@@ -19,11 +19,10 @@ function updateSlide(){
     } else if (currentSlide < 0){
         currentSlide = slides.length-1;
     }
-    document.getElementById("programGalleryTitle").innerHTML = slides[currentSlide].title;
-    document.getElementById("programGalleryCaption").innerHTML = slides[currentSlide].caption;
-    document.getElementById("programGalleryImage").src = slides[currentSlide].image;
-    document.getElementById("programGalleryLink").href = slides[currentSlide].link;
+    document.querySelector(".galleryTitle").innerHTML = slides[currentSlide].title;
+    document.querySelector(".galleryCaption").innerHTML = slides[currentSlide].caption;
+    document.querySelector(".galleryImage").src = slides[currentSlide].image;
+    document.querySelector(".galleryLink").href = slides[currentSlide].link;
 }
 
-console.log("script loaded");
 updateSlide();
