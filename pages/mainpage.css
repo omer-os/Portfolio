@@ -156,6 +156,9 @@ h4{
     border-left: none;
 
     padding: 5px;
+
+    font-size: 2vh;
+    line-height: 2.3vh; 
 }
 
 .galleryLeftArrow{
