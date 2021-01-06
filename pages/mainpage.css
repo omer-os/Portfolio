@@ -5,12 +5,14 @@
     font-weight: 100;
     src: url("../fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
 }
+html{
+    font: 100%;
+}
 
 body{
     color: #ffd256;
-    font-family: "roboto";
     background-color: #181818;
-    
+    font-family: "roboto";
 }
 
 button{
@@ -24,14 +26,8 @@ button:focus {
     outline: none;
 }
 
-
-h1, h2, h3, h4{
-    font-size: clamp(18px, 1.4vw, 70px);
-    padding: 1.3vh;
-}
-
 h1{ 
-    font-size: clamp(20px, 4vw, 170px);
+    font-size: clamp(1.2rem, 4vw, 4rem);
 
     padding-left: 6; 
 
@@ -45,24 +41,6 @@ h1{
 
 }
 
-h2, h3{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-
-    min-width: 720px;
-    max-width: 86vw;
-}
-
-h4{
-    margin-top: 20vh;
-    margin-bottom: 30vh;
-    margin-left: 27vw;
-    margin-right: 27vw;
-}
-
-
 .orangeBorder{
     border: 2px solid #ffd256;
     border-radius: 5px;
@@ -72,18 +50,21 @@ h4{
 
 .textBox{
     text-align: center;
-    font-size: 1.3vw;
-
-    padding: 2.5vh;
+    font-size: clamp(1rem, 1.2vw, 3rem);
+    padding: 1.3vh;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #galleryHeader{
-    margin-left: 35vw; 
-    margin-right: 35vw;
+    margin-left: 30vw; 
+    margin-right: 30vw;
 
     border-radius: 5px;
 
-    font-size: 1.4vw;
+    font-size: clamp(1rem, 1.2vw, 3rem);
 } 
 
 #programGallery{
@@ -135,7 +116,7 @@ h4{
 
     padding: 5px;
 
-    font-size: 4vh;
+    font-size: 2rem;
 
     border-radius: 0;
     border-top-left-radius: 5px;
@@ -157,8 +138,7 @@ h4{
 
     padding: 5px;
 
-    font-size: 2vh;
-    line-height: 2.3vh; 
+    font-size: clamp(1rem, 1.2vw, 3rem)
 }
 
 .galleryLeftArrow{
@@ -175,6 +155,12 @@ h4{
     font-size: 7vw;
 }
 
+#outroText{
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    margin-left: 27vw;
+    margin-right: 27vw;
+}
 
 #socialBar{
     position: fixed;
@@ -184,7 +170,6 @@ h4{
     
     bottom: 0;
     left: 0 ;
-
 }
 
 
@@ -208,7 +193,7 @@ h4{
 
     }
 
-    h2, h3, h4{
+    .textBox{
         margin-top: 10vh;
         margin-bottom: 10vh;
         margin-left: auto;
@@ -239,11 +224,10 @@ h4{
         margin-left: 0; 
         margin-right: 0;
         border-radius: 0;
-        font-size: 3vw;
+        font-size: clamp(2rem, 3vw, 5rem);
     }
 
-    #programGallery{   
-        height: 70vh;
+    #programGallery{
         width: 100%;
 
         
@@ -297,7 +281,7 @@ h4{
         grid-column: 1/13;
         grid-row: 8/13;
     
-        font-size: 4vw; 
+        font-size: clamp(1rem, 3vw, 5rem); 
 
         border: 5px solid #ffd256;
         border-left: 0;
@@ -315,6 +299,13 @@ h4{
         grid-column: 12;
         grid-row: 13;
         font-size: 7vw;
+    }
+
+    #outroText{
+        margin-top: 20vh;
+        margin-bottom: 30vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     #socialBar{

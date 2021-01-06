@@ -27,6 +27,10 @@ h1{
     padding: 2.5vh;
 }
 
+.videoEmbed{
+    text-align: center;
+}
+
 @media (orientation:portrait){
 
     h1{
