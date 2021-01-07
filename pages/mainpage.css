@@ -1,0 +1,321 @@
+@import url("reset.css");
+
+@font-face{
+    font-family:"roboto";
+    font-weight: 100;
+    src: url("../fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
+}
+html{
+    font: 100%;
+}
+
+body{
+    color: #ffd256;
+    background-color: #181818;
+    font-family: "roboto";
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: #ffd256;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+h1{ 
+    font-size: clamp(1.2rem, 4vw, 4rem);
+
+    padding-left: 6; 
+
+    margin-top: 10vh; 
+    margin-bottom: 70vh;
+    margin-left: 2vw;
+    margin-right: 70vw;
+
+    height: 20vh;
+    text-align: left;
+
+}
+
+.orangeBorder{
+    border: 2px solid #ffd256;
+    border-radius: 5px;
+
+    padding: 5px;
+}
+
+.textBox{
+    text-align: center;
+    font-size: clamp(1rem, 1.2vw, 3rem);
+    padding: 1.3vh;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#galleryHeader{
+    margin-left: 30vw; 
+    margin-right: 30vw;
+
+    border-radius: 5px;
+
+    font-size: clamp(1rem, 1.2vw, 3rem);
+} 
+
+#programGallery{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    height: 70vh;
+    width: 70vw;
+
+    min-width: 800px;
+    min-height: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+
+
+.galleryImage{ /*all images should be 700x700*/
+    grid-column: 2/8;
+    grid-row: 2/12;
+
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+
+    border: 2px solid #ffd256;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+
+    padding: 5;
+}
+
+.galleryLink{
+    grid-column: 2/8;
+    grid-row: 2/12;
+
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+.galleryTitle{
+    grid-column: 2/12;
+    grid-row: 1;
+
+    padding: 5px;
+
+    font-size: 2rem;
+
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    border: 2px solid #ffd256;
+    border-bottom: none;
+}
+
+.galleryCaption{
+    grid-column: 8/12;
+    grid-row: 2/12;
+
+    border-radius: 0;
+    border-bottom-right-radius: 5px;
+
+    border: 2px solid #ffd256;
+    border-left: none;
+
+    padding: 5px;
+
+    font-size: clamp(1rem, 1.2vw, 3rem)
+}
+
+.galleryLeftArrow{
+    grid-column: 1;
+    grid-row: 5/6;
+
+    font-size: 7vw;
+}
+
+.galleryRightArrow{
+    grid-column: 12;
+    grid-row: 5/6;
+    
+    font-size: 7vw;
+}
+
+#outroText{
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+    margin-left: 27vw;
+    margin-right: 27vw;
+}
+
+#socialBar{
+    position: fixed;
+    display: flex;
+    margin-left: 1vh;
+    margin-bottom: 1vh;   
+    
+    bottom: 0;
+    left: 0 ;
+}
+
+
+
+
+@media (orientation:portrait){
+
+    h1{
+        font-size: 10vw;
+
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-top: 5vh; 
+        margin-bottom: 85vh;
+
+        padding-top: 0.5vh;
+
+        border-radius: 0;
+
+        height: 10vh;
+
+    }
+
+    .textBox{
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+
+        min-width: inherit;
+        max-width: inherit;
+
+        border-radius: 0;
+
+        font-size: 2.3vw;
+    }
+
+    .profileImage{
+        margin: 0;
+        width: 100%; 
+
+        border: none;
+        border-radius: 0;
+        border-top:  5px solid #ffd256;
+        border-bottom:  5px solid #ffd256;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #galleryHeader{
+        margin-left: 0; 
+        margin-right: 0;
+        border-radius: 0;
+        font-size: clamp(2rem, 3vw, 5rem);
+    }
+
+    #programGallery{
+        width: 100%;
+
+        
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .galleryImage{ /*all images should be 700x700*/
+        grid-column: 1/13;
+        grid-row: 3/8;
+
+        border-bottom-left-radius: 0;
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+
+        object-position: center;
+    
+        object-fit: cover;
+    
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .galleryLink{
+        grid-column: 1/13;
+        grid-row: 3/8;
+    
+        object-fit: cover;
+    
+        width: 100%;
+        height: 100%;
+    }
+
+    .galleryTitle{
+        grid-column: 1/13;
+        grid-row: 2;
+    
+        padding: 5px;
+    
+        font-size: 3.5vh;
+    
+        border-radius: 0;
+        border: 5px solid #ffd256;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .galleryCaption{
+        grid-column: 1/13;
+        grid-row: 8/13;
+    
+        font-size: clamp(1rem, 3vw, 5rem); 
+
+        border: 5px solid #ffd256;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+    
+    .galleryLeftArrow{
+        grid-column: 1;
+        grid-row: 13;
+        font-size: 7vw;
+    }
+    
+    .galleryRightArrow{
+        grid-column: 12;
+        grid-row: 13;
+        font-size: 7vw;
+    }
+
+    #outroText{
+        margin-top: 20vh;
+        margin-bottom: 30vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    #socialBar{
+        position: static;
+        font-size: 3vw;
+    
+    }
+}
+
+
+
+
+
