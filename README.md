@@ -2,6 +2,6 @@
 
 A summary of all my work, also my first proper web-design project.
 
-Check out the page for more info on me and my work/for my contact details. Its hosted at https://willowro.github.io/Portfolio-Site/Pages/index.html 
+Check out the page for more info on me and my work/for my contact details. Its hosted at https://willowro.github.io/Portfolio-Site/
 
 ..hopefully
