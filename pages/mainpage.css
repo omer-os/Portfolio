@@ -281,7 +281,7 @@ h1{
         grid-column: 1/13;
         grid-row: 8/13;
     
-        font-size: clamp(1rem, 3vw, 5rem); 
+        font-size: clamp(1rem, 2vw, 3rem); 
 
         border: 5px solid #ffd256;
         border-left: 0;
