@@ -184,6 +184,11 @@ h1{
         as well as disabling double tap, disables zoom which some people with bad eyes need, use something else
         */
         touch-action: manipulation;
+
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        text-size-adjust: none;
     }
 
     h1{
@@ -203,10 +208,11 @@ h1{
     }
 
     .textBox{
+        padding: 0;
         margin-top: 3vh;
         margin-bottom: 3vh;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5px;
+        margin-right: 5px;
 
         min-width: inherit;
         max-width: inherit;
@@ -214,7 +220,7 @@ h1{
         border-radius: 0;
 
         text-align: left;
-        font-size: clamp(5px, 1.4vw, 50px);
+        font-size: clamp(25px, 3.6vw, 50px);
     }
 
     .profileImage{
@@ -234,7 +240,7 @@ h1{
         margin-left: 0; 
         margin-right: 0;
         border-radius: 0;
-        font-size: clamp(2rem, 3vw, 5rem);
+        font-size: clamp(2rem, 4vw, 5rem);
     }
 
     #programGallery{
@@ -243,16 +249,22 @@ h1{
         
         margin-left: 0;
         margin-right: 0;
+
+        border-bottom: 5px solid #ffd256;
+        border-top: 5px solid #ffd256;
     }
 
     .galleryImage{ /*all images should be 700x700*/
         grid-column: 1/13;
         grid-row: 2/7;
 
-        border-bottom-left-radius: 0;
-        border: 0;
         padding-left: 0;
         padding-right: 0;
+        border-radius: 0;
+
+        border: 5px solid #ffd256;
+        border-left: 0;
+        border-right: 0;
 
         object-position: center;
     
@@ -279,24 +291,18 @@ h1{
     
         padding: 5px;
     
-        font-size: clamp(5px, 1.4vw, 50px);
+        font-size: clamp(5px, 4vw, 50px);
     
-        border-radius: 0;
-        border: 5px solid #ffd256;
-        border-left: 0;
-        border-right: 0;
+        border: 0;
     }
 
     .galleryCaption{
         grid-column: 1/13;
         grid-row: 7/12;
     
-        font-size: clamp(5px, 1.4vw, 50px); 
+        font-size: clamp(5px, 3vw, 50px); 
 
-        border: 5px solid #ffd256;
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
+        border: 0;
     }
     
     .galleryLeftArrow{
@@ -310,6 +316,8 @@ h1{
         grid-row: 12;
         font-size: 7vw;
     }
+
+
 
     #outroText{
         margin-top: 20vh;
