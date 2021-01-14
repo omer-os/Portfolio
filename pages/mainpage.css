@@ -26,6 +26,11 @@ button:focus {
     outline: none;
 }
 
+a:link, a:visited{
+    color: #ffd256;
+    text-decoration: none;
+}
+
 h1{ 
     font-size: clamp(1.2rem, 4vw, 4rem);
 
@@ -163,7 +168,6 @@ h1{
 }
 
 #socialBar{
-    position: fixed;
     display: flex;
     margin-left: 1vh;
     margin-bottom: 1vh;   
@@ -183,9 +187,9 @@ h1{
         touch-action: pan-y;
         as well as disabling double tap, disables zoom which some people with bad eyes need, use something else
         */
-        touch-action: manipulation;
+        touch-action: manipulation; /*stops double tap zoom*/
 
-        -webkit-text-size-adjust: none;
+        -webkit-text-size-adjust: none; /*stops browsers messing with text size*/
         -moz-text-size-adjust: none;
         -ms-text-size-adjust: none;
         text-size-adjust: none;
@@ -211,62 +215,51 @@ h1{
         padding: 0;
         margin-top: 3vh;
         margin-bottom: 3vh;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
 
         min-width: inherit;
         max-width: inherit;
 
-        border-radius: 0;
+        border: 0;
 
         text-align: left;
         font-size: clamp(25px, 3.6vw, 50px);
     }
 
     .profileImage{
-        margin: 0;
-        width: 100%; 
+        width: 90%; 
+    }
 
-        border: none;
-        border-radius: 0;
-        border-top:  5px solid #ffd256;
-        border-bottom:  5px solid #ffd256;
-
-        padding-left: 0;
-        padding-right: 0;
+    .orangeBorder{
+        border: 5px solid #ffd256;
+        border-radius: 10px;
     }
 
     #galleryHeader{
-        margin-left: 0; 
-        margin-right: 0;
-        border-radius: 0;
+        margin-left: 15px; 
+        margin-right: 15px;
         font-size: clamp(2rem, 4vw, 5rem);
     }
 
     #programGallery{
-        width: 100%;
+        width: 92vw;
+     
+        margin-left: 4vw;
+        margin-right: 4vw;
 
-        
-        margin-left: 0;
-        margin-right: 0;
-
-        border-bottom: 5px solid #ffd256;
-        border-top: 5px solid #ffd256;
+        border: 5px solid #ffd256;
+        border-radius: 10px;
     }
 
     .galleryImage{ /*all images should be 700x700*/
         grid-column: 1/13;
         grid-row: 2/7;
 
-        padding-left: 0;
-        padding-right: 0;
         border-radius: 0;
-
         border: 5px solid #ffd256;
         border-left: 0;
         border-right: 0;
-
-        object-position: center;
     
         object-fit: cover;
     

@@ -24,6 +24,7 @@ function updateSlide(){
     document.querySelector(".galleryCaption").innerHTML = slides[currentSlide].caption;
     document.querySelector(".galleryLink").href = slides[currentSlide].link;
     document.querySelector(".galleryImage").src = slides[currentSlide].image;
+    document.querySelector(".galleryImage").style = slides[currentSlide].imagePos;
 
 }
 
