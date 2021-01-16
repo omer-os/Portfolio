@@ -19,6 +19,15 @@ export var slides = [
         "./pages/gallery/epq-project/epq-project.html"
         ),
     new slide(
+        "Work on Aardvark XR", 
+        "Aardvark is a web-based virtual reality system which allows users to create and share web apps which are overlayed on top of the users vr experience, completely separate from the program they are currently running.\
+        This allows for an incredibly flexible in-vr toolset that can be accessed within any virtual reality program. <br><br>Over the course of its release I have attended its first hackathon and added to its development in multiple \
+        ways whether through designing 3D models for other developers apps or creating my own.", 
+        "./pages/gallery/aardvark-work/projectHeaderImage.png", 
+        "object-position: center;",
+        "./pages/gallery/aardvark-work/aardvark-work.html"
+        ),
+    new slide(
         "Tower defence game", 
         "A project I created with a friend to help us gain a better understanding of pygame. <br><br> This was a basic tower defence game but featured a fully scalable and customisable \
         level system allowing users to add their own levels and towers. One of my earliest projects, this is something I have revisited and improved upon quite a few times.", 
