@@ -7,30 +7,31 @@
     <meta charset="UTF-8">
 
     <script src = "pages\gallery.js" type = "module"></script>
-    <title>Nye Evans Portfolio</title>
+    <script src = "pages\siteTitle.js" type = "module"></script>
+    <title></title>
 </header>
 
 <body>
     <div id = "introScreenSpace">
         <h1>
-            Rosia E Evans
+            <div id = "siteTitle"></div>
             <div style = "font-size: 30%; padding-top: 10;">Portfolio</div>
         </h1>
     </div>
 
     <div class = "textBox">
         An aspiring software developer who specialises in C++, C# and Python, with an intrest in lower level langauges like Assembly; 
-        Most of my work is software based, with Python and C++, although I sometimes try game design with smalls groups of friends, in Unity, Unreal Engine and additionally, some solo level design in Source. 
+        Most of my work is software based, with Python and C++ along with some web-development experience in html, css, javascript and typescript.
         
     </div>
 
     <div style = "text-align: center;">
-        <img src = "images\Profile.jpg" class = "profileImage orangeBorder">
+        <img src = "" id = "profileImage" class = "profileImage orangeBorder">
     </div>
 
     <div class = "textBox" style = "margin-bottom: 5vh;"> 
         Most of my current work experience relates to personal projects, however I have previously done work experience at jba consulting writing a
-        program to convert their sql databases to excel spreadsheets. I also often teach Python and HTML, having taught many students at my schools coding club for over 6 years and having tutored 
+        program to convert their sql databases to excel spreadsheets. I also often teach Python and HTML, having taught many students at my school's coding club for over 6 years and having tutored 
         GCSE students briefly. You can see my full CV <a href = "pages/CVPage.html">here</a>.
     </div>
 
@@ -50,8 +51,9 @@
             <img src = "./pages/gallery/epq-project/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
         </a>
         <p class = "galleryCaption">A project done for my EPQ, during post-16, where I aimed to create a virtual reality environment where the user could grab and interact with objects in a semi-physics based
-            environment.<br><br>This system was my introduction to Unreal Engine and mainly used its \"Blueprint\" visual language, however I later used C++ to try and add my own physics
-            to it.</p>
+            environment.<br><br>This system was my introduction to Unreal Engine and mainly used its "Blueprint" visual language, however I later used C++ to try and add my own physics
+            to it.
+        </p>
         <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
         <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
     </div>
@@ -61,9 +63,10 @@
         <a href = "./pages/gallery/aardvark-work/aardvark-work.html"  class = "galleryLink">
             <img src = "./pages/gallery/aardvark-work/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
         </a>
-        <p class = "galleryCaption">Aardvark is a web-based virtual reality system which allows users to create and share web apps which are overlayed on top of the users vr experience, completely separate from the program they are currently running.
-            This allows for an incredibly flexible in-vr toolset that can be accessed within any virtual reality program. <br><br>Over the course of its release I have attended its first hackathon and added to its development in multiple
-            ways whether through designing 3D models for other developers apps or creating my own.</p>
+        <p class = "galleryCaption">Aardvark is a web-based virtual reality system which allows users to create and share web apps which are overlayed on top of the users vr experience.<br><br>
+            Over the course of its release I have attended its first hackathon and continued to support it long afterwards, having worked both on my own and with other developers to create apps 
+            for the system to help it gain traction.
+        </p>
         <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
         <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
     </div>
@@ -73,7 +76,9 @@
         <a href = "./pages/gallery/cat-tower-defence/cat-tower-defence.html"  class = "galleryLink">
             <img src = "./pages/gallery/cat-tower-defence/projectHeaderImage.png"  class = "galleryImage" style = "object-position: top;">
         </a>
-        <p class = "galleryCaption">"A project I created with a friend to help us gain a better understanding of pygame. <br><br> This was a basic tower defence game but featured a fully scalable and customisable</p>
+        <p class = "galleryCaption">One of my first projects, this was created with a friend to help us gain a better understanding of python. <br><br> This was a basic tower defence game but featured a fully scalable and 
+            level design system.
+        </p>
         <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
         <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
     </div>
@@ -91,13 +96,13 @@
         <!-- please dont follow me if you see this, i want this to be a work only twitter account,
         <a href = "https://twitter.com/Wi__Ro" target="_blank" style = "color:#ffd256;">Twitter</a>
         -->
-        <a href = "pages/NoTwitter.html" target="_blank">Twitter</a>
+        <a href = "./pages/NoTwitter.html" target="_blank">Twitter</a>
         &NonBreakingSpace;
         <a href="mailto:WillowRo@outlook.com" target="_blank">Email</a>
         &NonBreakingSpace;
-        <a href="https://github.com/WillowRo" target="_blank">Github</a>
+        <a href="https://github.com/Wil-Ro" target="_blank">Github</a>
         &NonBreakingSpace;
-        <a href = "pages/CVPage.html">CV</a>
+        <a href = "./pages/CVPage.html">CV</a>
     </div>
 </body>
 
