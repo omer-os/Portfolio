@@ -38,11 +38,17 @@ h1{
     margin-top: 10vh; 
     margin-bottom: 70vh;
     margin-left: 2vw;
-    margin-right: 70vw;
+    margin-right: 60vw;
 
     height: 20vh;
     text-align: left;
 
+}
+
+.subTitle{
+    font-size: 30%;
+    padding-top: 10;
+    padding-left: 5;
 }
 
 .orangeBorder{
