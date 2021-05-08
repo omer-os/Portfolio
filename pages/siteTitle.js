@@ -1,5 +1,7 @@
 //taken and reworked from here https://www.labnol.org/visitor-country-ip-address-200822
 //original code by Amit Agarwal
+//this is here due to the fact that I'm know by different names online and in the real world, 
+//however it was removed because the ip2c server wasnt accurate enough
 
 
 const checkCountry = () => {
