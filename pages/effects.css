@@ -1,0 +1,44 @@
+a:hover:not(.galleryLink){
+    background-color: #ffd256;
+    color: #181818;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+span{
+    background-color: #ffd256;
+    color: #181818;
+    border-radius: 2px;
+}
+
+span:hover{
+    background-color: #181818;
+    color: #ffd256;
+    border-radius: 2px;
+    outline: solid 1px #ffd256;
+}
+
+::selection {
+    background-color: #ffd256;
+    color: #181818;
+}
+
+::-moz-selection {
+    background-color: #ffd256;
+    color: #181818;
+}
+
+::-o-selection {
+    background-color: #ffd256;
+    color: #181818;
+}
+
+::-ms-selection {
+    background-color: #ffd256;
+    color: #181818;
+}
+
+::-webkit-selection {
+    background-color: #ffd256;
+    color: #181818;
+}
