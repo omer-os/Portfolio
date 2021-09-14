@@ -1,8 +1,8 @@
 var currentSlide = 0;
 var allSlides = document.querySelectorAll(".programGallery");
 
-
-window.nextSlide = function nextSlide(){
+// code for gallery to function during use
+window.nextSlide = function nextSlide(){ 
     currentSlide++;
     updateSlide();
 }
@@ -30,5 +30,12 @@ function hideAll(){
     }
 }
 
+// code to set up gallery when site is being loaded
+
+
 hideAll()
 updateSlide();
+
+// todo
+/*use webp image format
+ */
