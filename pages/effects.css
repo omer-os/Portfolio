@@ -1,3 +1,7 @@
+a:not(.galleryLink){
+    transition: background-color 0.5s
+}
+
 a:hover:not(.galleryLink){
     background-color: #ffd256;
     color: #181818;

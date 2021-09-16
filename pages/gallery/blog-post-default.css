@@ -42,10 +42,15 @@ a:link, a:visited{
 }
 
 iframe{
-    border: 2px solid #ffd256;
+    border: 2px solid transparent;
     border-radius: 5px;
 
     padding: 5px;
+    transition: border 0.5s;
+}
+
+iframe:hover{
+    border: 2px solid #ffd256;
 }
 
 .backButton{
