@@ -62,11 +62,6 @@ iframe:hover{
     text-decoration: none;
 }
 
-#backButtonContainer{
-    text-align: center; 
-    margin-bottom: 7vh; 
-    margin-top: 7vh;
-}
 
 
 @media (orientation:portrait){

@@ -1,40 +1,4 @@
-@import url("reset.css");
-
-@font-face{
-    font-family:"roboto";
-    font-weight: 100;
-    src: url("../fonts/Roboto/RobotoMono-VariableFont_wght.ttf")
-}
-html{
-    font: 100%;
-}
-
-body{
-    color: #ffd256;
-    background-color: #181818;
-    font-family: "roboto";
-    line-height: 1.3;
-}
-
-button{
-    background-color: transparent;
-    border: none;
-    color: #ffd256;
-}
-
-
-button:focus {
-    border: none;
-    outline: none;
-}
-
-a:link:not(.galleryLink), a:visited:not(.galleryLink){
-    color: #ffd256;
-    border-radius: 2px;
-    transition: background-color 0.5s, color 0.5s;
-}
-
-h1{ 
+#siteTitle h1{ 
     font-size: clamp(1.2rem, 4vw, 4rem);
 
     padding-left: 6; 
@@ -47,26 +11,6 @@ h1{
     height: 20vh;
     text-align: left;
 
-}
-
-.subTitle{
-    font-size: 30%;
-    padding-top: 10;
-    padding-left: 5;
-}
-
-.orangeBorder{
-    border: 2px solid transparent;
-    border-radius: 5px;
-
-    padding: 5px;
-
-    transition: border 0.5s;
-}
-
-.orangeBorder:hover{
-    border: 2px solid #ffd256;
-    padding: 5px;
 }
 
 .textBox{
@@ -109,7 +53,7 @@ h1{
 }
 
 .galleryItem{
-    height: 13vw;
+    height: 100%;
 }
 
 
@@ -146,7 +90,7 @@ h1{
     width: 78.5vw;
     height: 19vh;
     transition: visibility 0.3s, opacity 0.5s;
-    margin-top: 14.85vw;
+    margin-top: 20.85vh;
 }
 
 .popupTongue{
@@ -154,8 +98,8 @@ h1{
     opacity: 0;
     transition: visibility 0.3s, opacity 0.5s;
 
-    width: 1.85vw;
-    height: 1.85vw;
+    width: 1.85vh;
+    height: 1.85vh;
     margin-left: 5vw;
 }
 
@@ -184,18 +128,16 @@ h1{
     font-weight: 700;
 }
 
+#galleryOutroLink{
+    text-align: center;
+    margin-top: 5vh;
+}
+
 #outroText{
     margin-top: 12vh;
     margin-bottom: 20vh;
     margin-left: 27vw;
     margin-right: 27vw;
-}
-
-#socialBar{
-    display: flex;
-    margin-bottom: 5vh;   
-
-    justify-content: center;
 }
 
 
