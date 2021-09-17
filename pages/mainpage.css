@@ -1,4 +1,4 @@
-#siteTitle h1{ 
+#Title{ 
     font-size: clamp(1.2rem, 4vw, 4rem);
 
     padding-left: 6; 

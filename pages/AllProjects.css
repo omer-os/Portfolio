@@ -3,6 +3,11 @@
     margin-left: 3vw;
 }
 
+h2{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
 .item{
     display: flex;
     margin-top: 4vh;
