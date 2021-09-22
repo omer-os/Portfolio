@@ -27,6 +27,7 @@
     width: 30vw; 
     height: 30vw; 
     text-align: center;
+    margin: 0 auto;
 }
 
 .profileImage{
@@ -145,6 +146,90 @@
     margin-bottom: 20vh;
     margin-left: 27vw;
     margin-right: 27vw;
+}
+
+@media (orientation:portrait){
+    #Title{ 
+        font-size: 10vw;
+        margin-right: 50vw;
+    }
+    
+    .textBox{
+        font-size: 0.7rem;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .profileImageContainer{
+        margin: 2vh;
+        width: auto;
+        height: auto;
+    }
+    
+    .profileImage{
+        border-radius: 1vw; 
+    }
+
+    #galleryHeader{
+        margin-left: 2vw; 
+        margin-right: 2vw;
+        font-size: 0.7rem;
+    } 
+    
+    .gallery{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: 100vw;
+    }
+    
+    .galleryItem{
+        width: 20vw;
+        height: 20vw;
+        margin-bottom: 3vw;;
+    }
+    
+    .galleryPopup{
+        visibility: visible;
+        opacity: 1;
+        z-index: 0;
+        position: static;
+        background-color: transparent;
+        color: #ffd256;
+        width: 73.5vw;
+        height: 20vw;
+        margin-top: 0vh;
+    }
+
+    .popupTongue{
+        display: none;
+    }
+    
+    .popupImage{
+        display: none;
+    }
+    
+    .galleryImage{
+        border-radius: 2px;
+    }
+
+    
+    #galleryOutroLink{
+        font-size: 0.7rem;
+    }
+    
+    #outroText{
+        margin-top: 12vh;
+        margin-bottom: 20vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .galleryLink{ /*this is set in basics, but the gallery on mobile will want to be different*/
+        text-decoration: none;
+        color:#ffd256;
+    }
 }
 
 

@@ -28,15 +28,15 @@ button:focus {
     outline: none;
 }
 
-a:link:not(.galleryLink), a:visited:not(.galleryLink){
+a:not(.galleryLink), a:visited:not(.galleryLink){
     color: #ffd256;
     border-radius: 2px;
     transition: background-color 0.5s, color 0.5s;
 }
 
-.galleryLink{
+.galleryLink{ /*class to be given to any link that doesnt want fancy yellow backgrounds on hover*/
     text-decoration: none;
-    color:#ffd256;
+    color:#181818;
 }
 
 h1{ 
