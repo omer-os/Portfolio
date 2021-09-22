@@ -59,6 +59,7 @@ h1{
 #socialBar{
     display: flex;
     margin-bottom: 5vh;   
+    font-size: 2rem;
 
     justify-content: center;
 }
