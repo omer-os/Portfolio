@@ -51,13 +51,14 @@
     margin-left: 10vw;
     margin-right: 10vw;
     height: 19vh;
-    margin-bottom: 0vh;
-    transition: margin-bottom 0.5s;
+    margin-bottom: 5vh;
+    transition: margin-bottom 2s 2s ease-in;
     justify-content: space-evenly;
 }
 
 .galleryContainer:hover .gallery{
-    margin-bottom: 36vh;  
+    margin-bottom: 28vh;  
+    transition: 0.5s;
 }
 
 .galleryItem{
