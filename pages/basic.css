@@ -36,7 +36,6 @@ a:not(.galleryLink), a:visited:not(.galleryLink){
 
 .galleryLink{ /*class to be given to any link that doesnt want fancy yellow backgrounds on hover*/
     text-decoration: none;
-    color:#181818;
 }
 
 h1{ 
