@@ -35,7 +35,3 @@ function hideAll(){
 
 hideAll()
 updateSlide();
-
-// todo
-/*use webp image format
- */

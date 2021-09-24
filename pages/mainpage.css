@@ -56,8 +56,8 @@
     justify-content: space-evenly;
 }
 
-.gallery:hover{
-    margin-bottom: 36vh;   
+.galleryContainer:hover .gallery{
+    margin-bottom: 36vh;  
 }
 
 .galleryItem{

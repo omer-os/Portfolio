@@ -1,11 +1,13 @@
 <!doctype html>
-<HTML>
+<HTML lang="en-GB">
 
 <header>
     <link rel = "stylesheet" href = "pages\basic.css">
     <link rel = "stylesheet" href = "pages\mainpage.css">
     <link rel = "stylesheet" href = "pages\effects.css">
     <link rel = "icon" href = "images\Icon.ico">
+
+    <link rel="preload" href="fonts/Roboto/RobotoMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin> <!--we preload the font to stop a flash of unstyled text-->
 
     <meta charset="UTF-8">
 
@@ -29,7 +31,7 @@
     </div>
     <div style = "text-align: center;">
         <div class = "profileImageContainer orangeBorder">
-            <img src = "images/Profile3.png" alt = "me" class = "profileImage">
+            <img src = "images/Profile3.webp" alt = "me" class = "profileImage">
         </div>
     </div>
 
@@ -47,91 +49,89 @@
 
 
 
+    <div class = "galleryContainer">
+        <div class = "gallery">
 
-<!-- gallery slides defined here, originally we had one slide and just changed its values but loading images is slow, easier to load them before hand and just hide or show them-->
-    <div class = "gallery">
+            <div class = "galleryItem">
+                <a href = "./pages/gallery/epq-project/epq-project.html" class = "galleryImageContainer galleryLink">
+                    <img src = "./pages/gallery/epq-project/projectHeaderImage.webp"  class = "galleryImage" style = "object-position: center;">
+                </a>
+                <img src = "./images/popup-tongue.webp" class = "popupTongue">
+            </div>
 
-        <div class = "galleryItem">
-            <a href = "./pages/gallery/epq-project/epq-project.html" class = "galleryImageContainer galleryLink">
-                <img src = "./pages/gallery/epq-project/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
-            </a>
-            <img src = "./images/popup-tongue.png" class = "popupTongue">
+            <div class = "galleryPopup">
+                <img src = "./pages/gallery/epq-project/projectHeaderImage.webp"  class = "popupImage" style = "object-position: center;">
+                <a class = "popupTextContainer galleryLink" href = "./pages/gallery/epq-project/epq-project.html">
+                    <p class = "galleryTitle">VR physics engine</p>
+                    
+                    <p class = "galleryCaption">A project done for my EPQ, during post-16, where I aimed to create a virtual reality environment where the user could grab and interact with objects in a semi-physics based
+                        environment. This system was my introduction to Unreal Engine and mainly used its "Blueprint" visual language, however I later used C++ to try and add my own physics
+                        to it.
+                    </p>
+                </a>
+            </div>
+
+
+            <div class = "galleryItem">
+                <a href = "./pages/gallery/mind-map/mind-map.html" class = "galleryImageContainer galleryLink">
+                    <img src = "./pages/gallery/mind-map/projectHeaderImage.webp"  class = "galleryImage" style = "object-position: center;">
+                </a>
+                <img src = "./images/popup-tongue.webp" class = "popupTongue">
+            </div>
+
+            <div class = "galleryPopup">
+                <img src = "./pages/gallery/mind-map/projectHeaderImage.webp"  class = "popupImage" style = "object-position: center;">
+                <a class = "popupTextContainer galleryLink" href = "./pages/gallery/mind-map/mind-map.html">
+                    <p class = "galleryTitle">Unity based Mind Map software</p>
+                    
+                    <p class = "galleryCaption">A project done as my final piece for my A-level computer science course. <br> <br> This was a program designed to create mind maps, it could have nodes made, and linked, have images added and 
+                        included a pen tool to allow the user to draw notes on top of the mind maps. It also had a fully functional undo and redo system and the ability to save and load files.
+                    </p>
+                </a>
+            </div>
+
+
+            <div class = "galleryItem">
+                <a href = "./pages/gallery/cat-tower-defence/cat-tower-defence.html" class = "galleryImageContainer galleryLink">
+                    <img src = "./pages/gallery/cat-tower-defence/projectHeaderImage.webp"  class = "galleryImage" style = "object-position: center;">
+                </a>
+                <img src = "./images/popup-tongue.webp" class = "popupTongue">
+            </div>
+
+            <div class = "galleryPopup">
+                <img src = "./pages/gallery/cat-tower-defence/projectHeaderImage.webp"  class = "popupImage" style = "object-position: center;">
+                <a class = "popupTextContainer galleryLink" href = "./pages/gallery/cat-tower-defence/cat-tower-defence.html">
+                    <p class = "galleryTitle">Tower defence game</p>
+                    
+                    <p class = "galleryCaption">One of my first projects, this was created with a friend to help us gain a better understanding of python. <br><br> This was a basic tower defence game but featured a fully scalable 
+                        level design system.
+                    </p>
+                </a>
+            </div>
+
+
+            <div class = "galleryItem">
+                <a href = "./pages/gallery/aardvark-work/aardvark-work.html" class = "galleryImageContainer galleryLink">
+                    <img src = "./pages/gallery/aardvark-work/projectHeaderImage.webp"  class = "galleryImage" style = "object-position: center;">
+                </a>
+                <img src = "./images/popup-tongue.webp" class = "popupTongue">
+            </div>
+
+            <div class = "galleryPopup">
+                <img src = "./pages/gallery/aardvark-work/projectHeaderImage.webp"  class = "popupImage" style = "object-position: center;">
+                <a class = "popupTextContainer galleryLink" href = "./pages/gallery/aardvark-work/aardvark-work.html">
+                    <p class = "galleryTitle">Work on Aardvark XR</p>
+                    
+                    <p class = "galleryCaption">Aardvark is a web-based virtual reality system which allows users to create and share web apps which are overlayed on top of the users VR experience.<br><br>
+                        Over the course of its release I have attended its first hackathon and continued to support it long afterwards, having worked both on my own and with other developers to create apps 
+                        for the system to help it gain traction.
+                    </p>
+                </a>
+            </div>
         </div>
-
-        <div class = "galleryPopup">
-            <img src = "./pages/gallery/epq-project/projectHeaderImage.png"  class = "popupImage" style = "object-position: center;">
-            <a class = "popupTextContainer galleryLink" href = "./pages/gallery/epq-project/epq-project.html">
-                <p class = "galleryTitle">VR physics engine</p>
-                
-                <p class = "galleryCaption">A project done for my EPQ, during post-16, where I aimed to create a virtual reality environment where the user could grab and interact with objects in a semi-physics based
-                    environment. This system was my introduction to Unreal Engine and mainly used its "Blueprint" visual language, however I later used C++ to try and add my own physics
-                    to it.
-                </p>
-            </a>
+        <div id="galleryOutroLink">
+            <a href = "pages/AllProjects.html">See all my projects here</a>
         </div>
-
-
-        <div class = "galleryItem">
-            <a href = "./pages/gallery/mind-map/mind-map.html" class = "galleryImageContainer galleryLink">
-                <img src = "./pages/gallery/mind-map/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
-            </a>
-            <img src = "./images/popup-tongue.png" class = "popupTongue">
-        </div>
-
-        <div class = "galleryPopup">
-            <img src = "./pages/gallery/mind-map/projectHeaderImage.png"  class = "popupImage" style = "object-position: center;">
-            <a class = "popupTextContainer galleryLink" href = "./pages/gallery/mind-map/mind-map.html">
-                <p class = "galleryTitle">Unity based Mind Map software</p>
-                
-                <p class = "galleryCaption">A project done as my final piece for my A-level computer science course. <br> <br> This was a program designed to create mind maps, it could have nodes made, and linked, have images added and 
-                    included a pen tool to allow the user to draw notes on top of the mind maps. It also had a fully functional undo and redo system and the ability to save and load files.
-                </p>
-            </a>
-        </div>
-
-
-        <div class = "galleryItem">
-            <a href = "./pages/gallery/cat-tower-defence/cat-tower-defence.html" class = "galleryImageContainer galleryLink">
-                <img src = "./pages/gallery/cat-tower-defence/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
-            </a>
-            <img src = "./images/popup-tongue.png" class = "popupTongue">
-        </div>
-
-        <div class = "galleryPopup">
-            <img src = "./pages/gallery/cat-tower-defence/projectHeaderImage.png"  class = "popupImage" style = "object-position: center;">
-            <a class = "popupTextContainer galleryLink" href = "./pages/gallery/cat-tower-defence/cat-tower-defence.html">
-                <p class = "galleryTitle">Tower defence game</p>
-                
-                <p class = "galleryCaption">One of my first projects, this was created with a friend to help us gain a better understanding of python. <br><br> This was a basic tower defence game but featured a fully scalable 
-                    level design system.
-                </p>
-            </a>
-        </div>
-
-
-        <div class = "galleryItem">
-            <a href = "./pages/gallery/aardvark-work/aardvark-work.html" class = "galleryImageContainer galleryLink">
-                <img src = "./pages/gallery/aardvark-work/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
-            </a>
-            <img src = "./images/popup-tongue.png" class = "popupTongue">
-        </div>
-
-        <div class = "galleryPopup">
-            <img src = "./pages/gallery/aardvark-work/projectHeaderImage.png"  class = "popupImage" style = "object-position: center;">
-            <a class = "popupTextContainer galleryLink" href = "./pages/gallery/aardvark-work/aardvark-work.html">
-                <p class = "galleryTitle">Work on Aardvark XR</p>
-                
-                <p class = "galleryCaption">Aardvark is a web-based virtual reality system which allows users to create and share web apps which are overlayed on top of the users VR experience.<br><br>
-                    Over the course of its release I have attended its first hackathon and continued to support it long afterwards, having worked both on my own and with other developers to create apps 
-                    for the system to help it gain traction.
-                </p>
-            </a>
-        </div>
-
-    </div>
-
-    <div id="galleryOutroLink">
-        <a href = "pages/AllProjects.html">See all my projects here</a>
     </div>
 
     <div class = "textBox" id= "outroText">
