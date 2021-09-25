@@ -1,6 +1,5 @@
 .projectThumbnail{
     width: 16vh;
-    margin-left: 3vw;
 }
 
 h2{
@@ -18,4 +17,8 @@ h2{
     flex-direction: column;
     padding: 10px;
     color: #ffd256;
+}
+
+body{
+    margin: 3vw;
 }
