@@ -1,0 +1,40 @@
+/* import roboto font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgb(43, 43, 43);
+    background-color: rgb(22, 22, 22);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.nav-left{
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.menu-btn{
+    cursor: pointer;
+}
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
