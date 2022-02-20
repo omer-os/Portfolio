@@ -1,81 +1,101 @@
-/* import roboto font */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-body,html{
-    height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+:root {
+  --bg: #eff7e1;
+  --bg-1: #214151;
+  --bg-2: #c8a777;
+}
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700); */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg);
 }
 
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid rgb(37, 74, 104);
-    background-color: rgb(37, 74, 104);
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    color: white;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--bg-1);
+  background-color: var(--bg-1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 999;
 }
 
-.nav-left{
-    font-size: 1.3em;
-    font-weight: 700;
-    text-transform: capitalize;
+.nav-left {
+  font-size: 1.3em;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
-.menu-btn{
-    cursor: pointer;
+.menu-btn {
+  cursor: pointer;
 }
-.line{
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
 }
 
-.sec-1{
-    position: relative;
-    top: 100px;
-    display: grid;
-    grid-template-columns: 270px 390px;
-    grid-template-rows: auto auto 320px ;
-    place-content: center;
-    padding: 20px;
-    column-gap: 30px;
-    row-gap: 5px;
+.sec-1 {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-template-columns: 280px minmax(230px, 330px);
+  grid-template-rows: minmax(300px, 350px);
+  place-content: center;
+  padding: 20px;
+  column-gap: 30px;
+  row-gap: 5px;
 }
-.sec1-img{
-    grid-column: 2/4;
-    grid-row: 1/4;
-    background-image: url(./images/Profile3.png);
-    background-size: cover;
-    background-position: center;
+.sec1-img {
+  grid-column: 2/4;
+  /* grid-row: 1/4; */
+  background-image: url(./images/Profile3.png);
+  background-size: cover;
+  background-position: center;
 }
-.sec1-title{
-    font-size: 3em;
-    font-weight: 700;
-    color: rgb(37, 74, 104);
+.sec1-title {
+  font-size: clamp(1.2em, 6vmin, 3em);
+  font-weight: 700;
+  color: rgb(37, 74, 104);
 }
-.sec1-body{
-    font-size: 1.5em;
+.sec1-body {
+  font-size: clamp(1em, 4vmin, 1.5em);
 }
-span.colored-text{
-    color: rgb(143, 64, 40);
-    font-weight: 700;
+span.colored-text {
+  color: var(--bg-2);
+  font-weight: 700;
 }
-.sec1-btn{
-    margin-top: 35px;
-    background-color: rgb(94, 94, 42);
-    color: white;
-    font-size: 1.3em;
-    font-weight: 700;
-    padding: 10px 20px;
-    box-shadow: 6px 6px 2px rgb(182, 182, 182);
-    width: max-content;
-    height: max-content;
-    cursor: pointer;
+.sec1-btn {
+  margin-top: 35px;
+  background-color: var(--bg-2);
+  color: white;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 10px 20px;
+  box-shadow: 6px 6px 2px rgb(182, 182, 182);
+  width: max-content;
+  height: max-content;
+  cursor: pointer;
+}
+.sec1-left {
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .sec-1 {
+    grid-template-columns: 250px minmax(200px, 330px);
+  }
+}
+@media (max-width: 550px) {
+  .sec-1 {
+    grid-template-columns: 254px minmax(200px, 330px);
+  }
 }
