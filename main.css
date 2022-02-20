@@ -2,14 +2,18 @@
   --bg: #eff7e1;
   --bg-1: #214151;
   --bg-2: #c8a777;
+  --bg-3: #744923;
 }
 /* @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700); */
 body,
 html {
-  height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: var(--bg);
+}
+
+.sec-1 {
+  transition: all 0.3s ease;
 }
 
 .nav {
@@ -56,21 +60,21 @@ html {
 }
 .sec1-img {
   grid-column: 2/4;
-  /* grid-row: 1/4; */
   background-image: url(./images/Profile3.png);
   background-size: cover;
   background-position: center;
 }
 .sec1-title {
-  font-size: clamp(1.2em, 6vmin, 3em);
+  font-size: clamp(2em, 6vmin, 3em);
   font-weight: 700;
   color: rgb(37, 74, 104);
 }
 .sec1-body {
-  font-size: clamp(1em, 4vmin, 1.5em);
+  font-size: clamp(1.1em, 4vmin, 1.5em);
 }
 span.colored-text {
   color: var(--bg-2);
+  font-size: clamp(1.1em, 4vmin, 1.5em);
   font-weight: 700;
 }
 .sec1-btn {
@@ -96,6 +100,77 @@ span.colored-text {
 }
 @media (max-width: 550px) {
   .sec-1 {
-    grid-template-columns: 254px minmax(200px, 330px);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    text-align: center;
+    justify-items: center;
+    row-gap: 20px;
   }
+  .sec1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .sec1-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+  }
+  .sec1-btn {
+    margin-top: 15px;
+    font-size: 1.1em;
+  }
+}
+
+.sec-2 {
+  background-color: var(--bg-3);
+  color: white;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  place-items: center;
+  padding: 50px;
+  text-align: center;
+}
+.sec2-title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.sec2-body {
+  font-size: 1.1em;
+  max-width: 450px;
+}
+
+
+.sec-3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sec3-inner {
+  position: relative;
+  top: 190px;
+  background: #ffffff;
+  box-shadow: 0px 0px 28.785px 3.59813px #cccccc;
+  padding: 25px;
+  margin: 10px;
+
+  text-align: center;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec3-title{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.sec3-body{
+    font-size: 1.1em;
 }
