@@ -4,8 +4,6 @@ body,html{
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
 }
 
 
@@ -14,12 +12,13 @@ body,html{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid rgb(43, 43, 43);
-    background-color: rgb(22, 22, 22);
+    border-bottom: 1px solid rgb(37, 74, 104);
+    background-color: rgb(37, 74, 104);
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
+    color: white;
 }
 
 .nav-left{
@@ -38,3 +37,45 @@ body,html{
     margin: 5px 0;
 }
 
+.sec-1{
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: 270px 390px;
+    grid-template-rows: auto auto 320px ;
+    place-content: center;
+    padding: 20px;
+    column-gap: 30px;
+    row-gap: 5px;
+}
+.sec1-img{
+    grid-column: 2/4;
+    grid-row: 1/4;
+    background-image: url(./images/Profile3.png);
+    background-size: cover;
+    background-position: center;
+}
+.sec1-title{
+    font-size: 3em;
+    font-weight: 700;
+    color: rgb(37, 74, 104);
+}
+.sec1-body{
+    font-size: 1.5em;
+}
+span.colored-text{
+    color: rgb(143, 64, 40);
+    font-weight: 700;
+}
+.sec1-btn{
+    margin-top: 35px;
+    background-color: rgb(94, 94, 42);
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 10px 20px;
+    box-shadow: 6px 6px 2px rgb(182, 182, 182);
+    width: max-content;
+    height: max-content;
+    cursor: pointer;
+}
