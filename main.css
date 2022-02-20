@@ -12,6 +12,11 @@ html {
   background-color: var(--bg);
 }
 
+.btn{transition: all .2s ease;}
+.btn:active{
+    transform: scale(.95);
+    box-shadow: 0 0 0 wheat;
+}
 .sec-1 {
   transition: all 0.3s ease;
 }
@@ -173,4 +178,77 @@ span.colored-text {
 }
 .sec3-body{
     font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+/* sec 5 */
+
+.sec-5{
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(200px,750px);
+    grid-template-rows: auto repeat(4,max-content);
+    position: relative;
+    top: 200px;
+    justify-content: center;
+}
+.sec5-title{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--bg-3);
+}
+.project{
+    display: grid;
+    grid-template-columns: minmax(100px, 150px) 1fr;
+    grid-template-rows: auto 1fr auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 28.785px 3.59813px #cccccc;
+    padding: 25px;
+    margin: 20px;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.project-img{
+    grid-row: 1/4;
+    background-image: url(./pages/gallery/epq-project/projectHeaderImage.png);
+    background-size: cover;
+    background-position: center;
+}
+.project-title{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--bg-1);
+}
+.project-body{
+    font-size: 1em;
+}
+.proj-learn-more-btn{
+    background-color: var(--bg-3);
+    color: white;
+    width: max-content;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:570px) {
+    .project{
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+        grid-auto-rows: max-content;
+    }
+    .proj-learn-more-btn{
+        font-size: 1em;
+    }
 }
