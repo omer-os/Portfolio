@@ -1,2 +1,7 @@
-## improving Portfolio-Site from https://github.com/Wil-Ro/Portfolio
-Note: this site is not mine im just making improvments to it
+# Portfolio-Site
+
+s
+
+A summary of all my work, also my first proper web-design project.
+
+Check out the page for more info on me and my work/for my contact details. Its hosted at https://Wil-Ro.github.io/Portfolio

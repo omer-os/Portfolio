@@ -1,122 +1,153 @@
-<HTML>
-
-<header>
-    <link rel = "stylesheet" href = "pages\mainpage.css">
-    <link rel = "stylesheet" href = "pages\effects.css">
-    <link rel = "icon" href = "images\Icon.ico">
-
-    <meta charset="UTF-8">
-
-    <script src = "scripts\gallery.js" type = "module"></script>
-    <script src = "scripts\autoScroll.js" type = "module"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nye Evans Portfolio</title>
-</header>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
-    <div id = "introScreenSpace">
-        <h1>
-            <div id = "siteTitle">Nye "Ro" Evans</div>
-            <div class = "subTitle">Portfolio</div>
-        </h1>
+  <body>
+    <div class="nav">
+      <div class="nav-left">Nye Evans Portfolio</div>
+      <div class="menu-btn btn">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
     </div>
 
-    <div class = "textBox">
-        An aspiring software developer who specialises in C++, C# and Python, with an intrest in lower level langauges like Assembly; 
-        Most of my work is software based, with Python and C++ along with some web-development experience in HTML, CSS, JavaScript and TypeScript.
-        
+    <div class="menu">
+      <div class="menu-inner">
+        <a class="btn" href="#home">home</a>
+        <a class="btn" href="#skills">skills</a>
+        <a class="btn" href="#projects">projects</a>
+        <a class="btn" href="#contact">contact me</a>
+      </div>
     </div>
 
-    <div style = "text-align: center;">
-        <img src = "images/Profile3.png" id = "profileImage" class = "profileImage orangeBorder" alt = "me">
-    </div>
-
-    <div class = "textBox" style = "margin-bottom: 5vh;"> 
-        Most of my experience relates to personal projects, however I have previously done work experience at JBA Consulting writing a
-        program to convert their SQL databases to Excel spreadsheets and am currently working as an intern in software development in test. I also often teach Python and HTML, having taught many students at my school's coding club for over 6 years and having tutored 
-        GCSE students briefly. You can see my full CV <a href = "pages/CVPage.html">here</a>.
-    </div>
-
-    <div class = "textBox" id = "galleryHeader">
-        Check out my larger projects here:
-        <div style = "font-size: 60%;">click a project to find out more</div>
-    </div>
-
-
-
-
-
-<!-- gallery slides defined here, originally we had one slide and just changed its values but loading images is slow, easier to load them before hand and just hide or show them-->
-    <div class = "programGallery">
-        <p class = "galleryTitle">VR physics engine</p>
-        <a href = "./pages/gallery/epq-project/epq-project.html"  class = "galleryLink">
-            <img src = "./pages/gallery/epq-project/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
+    <div class="sec-1" id="home">
+      <div class="sec1-left">
+        <div class="sec1-title">Hello 👋</div>
+        <div class="sec1-body">
+          I'm Nye Ro Evans And I'm <br />
+          <span class="colored-text">software developer</span>
+        </div>
+        <a href="#projects">
+          <div class="sec1-btn btn">My Projects</div>
         </a>
-        <p class = "galleryCaption">A project done for my EPQ, during post-16, where I aimed to create a virtual reality environment where the user could grab and interact with objects in a semi-physics based
-            environment.<br><br>This system was my introduction to Unreal Engine and mainly used its "Blueprint" visual language, however I later used C++ to try and add my own physics
-            to it.
-        </p>
-        <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
-        <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
+      </div>
+      <div class="sec1-img"></div>
     </div>
 
-    <div class = "programGallery">
-        <p class = "galleryTitle">Tower defence game</p>
-        <a href = "./pages/gallery/cat-tower-defence/cat-tower-defence.html"  class = "galleryLink">
-            <img src = "./pages/gallery/cat-tower-defence/projectHeaderImage.png"  class = "galleryImage" style = "object-position: top;">
-        </a>
-        <p class = "galleryCaption">One of my first projects, this was created with a friend to help us gain a better understanding of python. <br><br> This was a basic tower defence game but featured a fully scalable 
-            level design system.
-        </p>
-        <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
-        <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
+    <div class="sec-2" id="skills">
+      <div class="sec2-title">skills</div>
+      <div class="sec2-body">
+        specialises in TypeScript, C# and python, with an interest in lower
+        level languages like C++; Most of my work is software based, making
+        games and tools in python and C#.
+      </div>
     </div>
 
-    <div class = "programGallery">
-        <p class = "galleryTitle">Work on Aardvark XR</p>
-        <a href = "./pages/gallery/aardvark-work/aardvark-work.html"  class = "galleryLink">
-            <img src = "./pages/gallery/aardvark-work/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
-        </a>
-        <p class = "galleryCaption">Aardvark is a web-based virtual reality system which allows users to create and share web apps which are overlayed on top of the users VR experience.<br><br>
-            Over the course of its release I have attended its first hackathon and continued to support it long afterwards, having worked both on my own and with other developers to create apps 
-            for the system to help it gain traction.
-        </p>
-        <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
-        <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
+    <div class="sec-3" id="exp">
+      <div class="sec3-inner">
+        <div class="sec3-title">Work expearince</div>
+        <div class="sec3-body">
+          Most of my experience relates to personal projects, however I have
+          previously done work experience at JBA Consulting writing a program to
+          convert their SQL databases to Excel spreadsheets. I also often teach
+          Python and HTML, having taught many students at my school's coding
+          club for over 6 years and having tutored GCSE students
+        </div>
+      </div>
     </div>
 
-    <div class = "programGallery">
-        <p class = "galleryTitle">Unity based Mind Map software</p>
-        <a href = "./pages/gallery/mind-map/mind-map.html"  class = "galleryLink">
-            <img src = "./pages/gallery/mind-map/projectHeaderImage.png"  class = "galleryImage" style = "object-position: center;">
-        </a>
-        <p class = "galleryCaption">A project done as my final piece for my A-level computer science course. <br> <br> This was a program designed to create mind maps, it could have nodes made, and linked, have images added and 
-            included a pen tool to allow the user to draw notes on top of the mind maps. It also had a fully functional undo and redo system and the ability to save and load files.
-        </p>
-        <button class = "galleryLeftArrow" onClick = "window.parent.lastSlide();">◄</button>
-        <button class = "galleryRightArrow" onClick = "window.parent.nextSlide();">►</button>
+    <div class="sec-5" id="projects">
+      <div class="sec5-title">My Projects</div>
+
+      <div class="project">
+        <div class="project-img"></div>
+        <div class="project-title">VR physics engine</div>
+        <div class="project-body">
+          A project done for my EPQ, during post-16, where I aimed to create a
+          virtual reality environment where the user could grab and interact
+          with objects in a semi-physics based environment. This system was my
+          introduction to Unreal Engine and mainly used its "Blueprint" visual
+          language, however I later used C++ to try and add my own physics to
+          it.
+        </div>
+        <div class="proj-learn-more-btn btn">learn more</div>
+      </div>
+
+      <div class="project">
+        <div
+          class="project-img"
+          style="
+            background-image: url(./pages/gallery/cat-tower-defence/projectHeaderImage.png);
+          "
+        ></div>
+        <div class="project-title">Tower defence game</div>
+        <div class="project-body">
+          One of my first projects, this was created with a friend to help us
+          gain a better understanding of python.
+        </div>
+        <div class="proj-learn-more-btn btn">learn more</div>
+      </div>
+
+      <div class="project">
+        <div
+          class="project-img"
+          style="
+            background-image: url(./pages/gallery/aardvark-work/projectHeaderImage.png);"
+        ></div>
+        <div class="project-title">Work on Aardvark XR</div>
+        <div class="project-body">
+          Aardvark is a web-based virtual reality system which allows users to
+          create and share web apps which are overlayed on top of the users VR
+          experience.
+
+          <div class="proj-learn-more-btn btn">learn more</div>
+        </div>
+      </div>
     </div>
+
+
+
+
+<div class="sec-6" id="contact">
+    <div class="sec6-title">I hope you like my work! If you ever want to <br> contact me, my Email, Github and Social Medias can be found below.</div>
+
+    <div class="contacts"><a class="btn" href="">
+        <div class="social-media">
+            <div class="s-img twitter"></div>
+            <div class="s-name">Twitter</div>
+        </div>
+    </a>
     
+    <a class="btn" href="">
+        <div class="social-media">
+            <div class="s-img github"></div>
+            <div class="s-name">Github</div>
+        </div>
+    </a>
+    <a class="btn" href="">
+        <div class="social-media">
+            <div class="s-img email"></div>
+            <div class="s-name">Email</div>
+        </div>
+    </a>
+    <a class="btn" href="">
+        <div class="social-media">
+            <div class="s-img dev"></div>
+            <div class="s-name">Dev</div>
+        </div>
+    </a>
+  </div>
 
 
+    </body>
 
 
-
-    <div class = "textBox" id= "outroText">
-        I hope you like my work! If you ever want to contact me, my Email, Github and Social Medias can be found below.
-    </div>  
-
-    <div id = "socialBar">
-        <a href = "https://twitter.com/Wi__Ro" target="_blank">Twitter</a>
-        &NonBreakingSpace;
-        <a href="mailto:WillowRo@outlook.com" target="_blank">Email</a>
-        &NonBreakingSpace;
-        <a href="https://github.com/Wil-Ro" target="_blank">Github</a>
-        &NonBreakingSpace;
-        <a href = "https://dev.to/willowro" target="_blank">Dev.to</a>
-
-        &NonBreakingSpace;
-        <a href = "./pages/CVPage.html">CV</a>
-    </div>
-</body>
-
-</HTML>
+    <script src="./main.js"></script>
+</html>
